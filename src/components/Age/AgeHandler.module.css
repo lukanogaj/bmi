@@ -1,4 +1,4 @@
-.bmi__handler {
+.bmiHandler {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -7,7 +7,7 @@
   border: 3px solid #025eb8;
 }
 
-.age__handler__heading {
+.ageHandlerHeading {
   display: flex;
   width: 100%;
   align-items: center;
@@ -16,14 +16,14 @@
   /* padding-left: 2.4rem; */
 }
 
-.age__handler__heading h1 {
+.ageHandlerHeading h1 {
   letter-spacing: 0.1rem;
   font-size: 2.2em;
   color: #ffffff;
   padding-left: 2.4rem;
 }
 /* Div with the buttons and paragraph */
-.age__handler__tabs {
+.ageHandlerTabs {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@
   width: 100%;
 }
 
-.age__paragraph {
+.ageParagraph {
   width: 100%;
   font-size: 1.3rem;
   font-weight: 300;
@@ -39,7 +39,7 @@
 }
 
 /* Buttons design */
-.tabs__ages {
+.tabsAges {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,7 @@
   border-bottom: 5px solid #004b93;
 }
 
-.tabs_age {
+.tabsAgeBtn {
   display: flex;
   justify-content: center;
   width: 290px;
@@ -59,10 +59,15 @@
   font-size: 1.6rem;
 }
 
-.tabs_age:hover {
-  background-color: yellow;
+.tabsAgeBtn:hover {
+  background-color: rgb(123, 123, 98);
 }
+/* Class when the agge confirm */
 
+.tabsAgeConfirmed {
+  background-color: blue;
+  color: #ffffff;
+}
 /* Hovwr  */
 
 /* Line below the buttons  */

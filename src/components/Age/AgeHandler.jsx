@@ -2,12 +2,6 @@ import styles from './AgeHandler.module.css';
 import TabsAge from './TabsAge';
 
 const AgeHandler = (props) => {
-  // const [isConfirmed, setIsConfirmed] = useState(false);
-
-  // const clickHandler = (event) => {
-  //   setIsConfirmed(!isConfirmed);
-  //   console.log('Clicked');
-  // };
   return (
     <div className={styles.bmiHandler}>
       <div className={styles.ageHandlerHeading}>

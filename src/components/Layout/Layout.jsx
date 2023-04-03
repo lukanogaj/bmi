@@ -1,17 +1,10 @@
-import React from 'react';
-import './Layout.css';
-import Header from '../Header/Header';
-import AgeHandler from '../Age/AgeHandler';
+import React from "react";
+import "./Layout.css";
 
 /* Main conatiner with the childrens */
 
-const Layout = () => {
-  return (
-    <div className='container'>
-      <Header />
-      <AgeHandler />
-    </div>
-  );
+const Layout = ({ children }) => {
+  return <div className="container">{children}</div>;
 };
 
 export default Layout;

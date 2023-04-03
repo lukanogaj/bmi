@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Age/TabsAgeBtn.module.css";
+import styles from "../Age/AgeHandler.module.css";
 
 const TabButton = ({ label, handleClick, isConfirmed }) => {
   return (

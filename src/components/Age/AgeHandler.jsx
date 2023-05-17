@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './AgeHandler.module.css';
 import TabButton from '../TabButton';
+import MeasurementsUnits from '../MeasurementsUnits/MeasurementsUnits';
 
 const AgeHandler = (props) => {
   const [isConfirmed, setIsConfirmed] = useState('Adult');
@@ -10,9 +11,6 @@ const AgeHandler = (props) => {
     console.log(value);
   };
 
-  // const calculatorHandler = (value) => {
-  //   setIsConfirmed(value);
-  // };
   return (
     <div className={styles.bmiHandler}>
       <div className={styles.ageHandlerHeading}>
@@ -36,7 +34,17 @@ const AgeHandler = (props) => {
             isConfirmed={isConfirmed}
           />
         </div>
+        {isConfirmed === 'Adult' ? (
+          <div className={styles.adultTable}>
+            <h2>Height</h2>
+          </div>
+        ) : (
+          <div className={styles.childTable}>
+            <h2>Height</h2>
+          </div>
+        )}
       </div>
+      {/* <MeasurementsUnits /> */}
     </div>
   );
 };

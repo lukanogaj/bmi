@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from './components/Layout/Layout';
 import AgeHandler from './components/Age/AgeHandler';
 import Header from './components/Header/Header';
+import MeasurementsUnits from './components/MeasurementsUnits';
 import './App.css';
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
     <div>
       <Layout>
         <Header />
-        <AgeHandler />
+        <AgeHandler>
+          <MeasurementsUnits />
+        </AgeHandler>
       </Layout>
     </div>
   );

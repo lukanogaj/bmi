@@ -36,15 +36,15 @@ const AgeHandler = (props) => {
         </div>
         {isConfirmed === 'Adult' ? (
           <div className={styles.adultTable}>
-            <h2>Height</h2>
+            <h2>Calculate your BMI</h2>
           </div>
         ) : (
           <div className={styles.childTable}>
-            <h2>Height</h2>
+            <h2>Calculate your BMI</h2>
           </div>
         )}
       </div>
-      {/* <MeasurementsUnits /> */}
+      <MeasurementsUnits />
     </div>
   );
 };
